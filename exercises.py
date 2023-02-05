@@ -50,7 +50,7 @@ number = int(input())
 print(f'Следующее за числом {number} число: {(number+1)}')
 print(f'Для числа {number} предыдущее число: {(number-1)}')
 
-# EXERCISE 7
+# EXERCISE  7
 screen = int(input())
 block = int(input())
 keyboard = int(input())
