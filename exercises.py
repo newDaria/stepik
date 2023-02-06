@@ -75,3 +75,82 @@ print(an)
 # EXERCISE 10
 double_num = int(input())
 print(double_num, double_num*2, double_num*3, double_num*4, double_num*5, sep="---")
+a = 82 // 3 ** 2 % 7
+print(a)
+
+# EXERCISE 11
+b1 = int(input())
+q = int(input())
+n = int(input())
+bn = b1 * q**(n - 1)
+print(bn)
+
+# EXERCISE 12
+sm = int(input())
+m = sm // 100
+print(m)
+
+# EXERCISE 12
+students = int(input())
+mandarin = int(input())
+mandarin_per_student = mandarin // students
+print(mandarin_per_student)
+mandarin_left = mandarin % students
+print(mandarin_left)
+
+# EXERCISE 13
+people = int(input())
+people_left = people *(-1)// 2 * (-1)
+print(people_left)
+
+
+# EXERCISE 14
+place = int(input())
+room = place *(-1) // 4 *(-1)
+print(room)
+
+# EXERCISE 15
+minutes_input = int(input())
+hours = minutes_input // 60
+minutes_left = minutes_input % 60
+print(f'{minutes_input} мин - это {hours} час {minutes_left} минут.')
+
+#EXERCISE 16
+num = int(input())
+a = num % 10
+b = (num % 100) // 10
+c = num // 100
+sum = a + b + c
+print(f'Сумма цифр = {sum}')
+mult = a * b * c
+print(f'Произведение цифр = {mult}')
+
+# EXERCISE 17
+#457
+num = int(input())
+c = num % 10 #7
+b = (num % 100) // 10 #5
+a = num // 100 #4
+print(a,b,c, sep ='')
+print(a,c,b, sep ='')
+print(b,a,c, sep ='')
+print(b,c,a, sep ='')
+print(c,a,b, sep ='')
+print(c,b,a, sep ='')
+
+# EXERCISE 18
+#754
+num = int(input())
+a = num // 1000
+b = (num % 1000) // 100 #4
+c = (num % 100) // 10 #5
+d = num % 10 #7
+
+print(f'''
+Цифра в позиции тысяч равна {a}
+Цифра в позиции сотен равна {b}
+Цифра в позиции десятков равна {c}
+Цифра в позиции единиц равна {d}
+''')
+
+
