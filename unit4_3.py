@@ -95,3 +95,69 @@ elif color1 == 'желтый' and color2 == 'желтый':
     print('желтый')
 else:
     print('ошибка цвета')
+
+# EXERCISE 5
+
+num = int(input())
+if num >= 0  and num <=36:
+    if num == 0:
+        print('зеленый')
+    elif num >= 1 and num <= 10:
+        if num % 2 == 0:
+            print('черный')
+        else:
+            print('красный')
+    elif num >= 11 and num <= 18:
+        if num % 2 == 0:
+            print('красный')
+        else:
+            print('черный')
+    elif num >= 19 and num <= 28:
+        if num % 2 == 0:
+            print('черный')
+        else:
+            print('красный')
+    elif num >= 29 and num <= 36:
+        if num % 2 == 0:
+            print('красный')
+        else:
+            print('черный')
+else:
+    print('ошибка ввода')
+
+# EXERCISE 5
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
+
+if a1 < b1 < a2 < b2 or a2 < b2 < a1 < b1:
+    print('пустое множество')
+
+elif a1 < a2 < b1 < b2:
+    print(a2,b1)
+
+elif a2 < a1 < b2 < b1:
+    print(a1,b2)
+elif a1 < b1 == a2 < b2:
+    print(b1)
+elif a1 == a2 < b1 < b2:
+    print(a1,b1)
+elif a1 == a2 < b1 < b2 :
+    print(a1)
+elif a2< a1 < b1 == b2:
+    print(a1, b1)
+elif a1 == a2 < b2 < b1:
+    print(a2,b2)
+elif a1 < a2 < b1 == b2:
+    print(a2,b2)
+elif a1 < a2 < b2 < b1:
+    print(a2,b2)
+elif a2 < a1 < b1 < b2:
+    print(a1,b1)
+elif a1 == a2 < b1 == b2:
+    print(a1,b1)
+elif a2 < b2 == a1 < b1:
+    print(a1)
+
+
