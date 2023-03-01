@@ -98,3 +98,43 @@ else:
     for num in reversed(range(n, m, 2)):
         print(num + 1)
 
+# EXERCISE 11
+m, n = int(input()), int(input())
+for i in range(m, n + 1):
+    if i % 17 == 0 or i % 10 == 9 or i % 15 == 0:
+        print(i)
+
+# EXERCISE 12
+n = int(input())
+for num in range(1,11):
+    print(f'{n} x {num} = {n*num}')
+
+# EXERCISE 13
+
+num1 = 4
+num2 = 6
+num1 += num2
+num1 *= num1
+print(num1)
+
+# EXERCISE 14
+total = 0
+for i in range(1, 6):
+    total += i
+print(total)
+
+# EXERCISE 15
+total = 0
+for i in range(1, 6):
+    total += i
+    print(total, end='')
+
+# EXERCISE 16
+a, b = int(input()), int(input())
+total = 0
+for num in range(a,b +1 ):
+    if (num ** 3) % 10 == 4  or (num ** 3) % 10 == 9:
+        total = total +1
+print(total)
+
+
