@@ -446,17 +446,117 @@ import math
 #
 # checkList(all_num)
 # решить задачку сегодян
-# EXERCISE 42
+# # EXERCISE 42
+#
+# n = int(input())
+#
+# flag = 'YES'
+# #  остаток от делания
+# s = n % 10
+# while n != 0:
+#     n1 = n % 10
+#     if s > n1:
+#         flag = 'NO'
+#     s = n1
+#     n = n // 10
+# print(flag)
 
-n = int(input())
+# # break, continue, else
+# # EXERCISE 42
+#
+# for i in range(10):
+#     print(i, end='*')
+#     if i > 6:
+#         break
+# # EXERCISE 43
+# i = 100
+# while i > 0:
+#     if i == 40:
+#         break
+#     print(i, end='*')
+#     i -= 20
 
-flag = 'YES'
-#  остаток от делания
-s = n % 10
-while n != 0:
-    n1 = n % 10
-    if s > n1:
-        flag = 'NO'
-    s = n1
-    n = n // 10
-print(flag)
+# n = 10
+# while n > 0:
+#     n -= 1
+#     if n == 2:
+#         continue
+#     print(n, end='*')
+
+# result = 0
+# for i in range(10):
+#     if i % 2 == 0:
+#         continue
+#     result += i
+# print(result)
+
+# mult = 1
+# for i in range(1, 11):
+#    if i % 2 == 0:
+#       continue
+#    if i % 9 == 0:
+#       break
+#    mult *= i
+# print(mult)
+
+# # EXERCISE 44
+# n = int(input())
+# for i in range (2, n + 1):
+#     if n % i == 0:
+#         print(i)
+#
+#         break
+#     else:
+#         continue
+
+# # EXERCISE 45
+# n = int(input())
+# for i in range (1, n +1):
+#     if  i < 5 or i > 9 and i < 17 or i > 37 and i < 78 or i > 87:
+#             print(i)
+
+# # EXERCISE 46
+# n = 0
+# while n < 10:
+#     n += 2
+#     print(n)
+# else:
+#     print('Цикл завершен.')
+
+# # EXERCISE 47
+# n = 0
+# while n < 10:
+#     n += 2
+#     if n == 8:
+#         break
+#     print(n)
+# else:
+#     print('Цикл завершен.')
+
+# # EXERCISE 48
+# n = 0
+# while n < 10:
+#     n += 2
+#     if n == 7:
+#         break
+#     print(n)
+# else:
+#     print('Цикл завершен.')
+
+# EXERCISE 49
+count = 0
+# p = 0
+# первая ощибка что принимает только 9
+for i in range(1, 11):
+    x = int(input())
+    if x > 0:
+        # p = p * x
+        count += 1
+
+
+if count > 0:
+    print(count)
+    # print(p)
+else:
+    print('NO')
+
