@@ -543,21 +543,149 @@ import math
 # else:
 #     print('Цикл завершен.')
 
-# EXERCISE 49
-count = 0
-# p = 0
-# первая ощибка что принимает только 9
-for i in range(1, 11):
-    x = int(input())
-    if x > 0:
-        # p = p * x
-        count += 1
+# # EXERCISE 49
+# count = 0
+# # p = 0
+# # первая ощибка что принимает только 9
+# for i in range(1, 11):
+#     x = int(input())
+#     if x > 0:
+#         # p = p * x
+#         count += 1
+#
+#
+# if count > 0:
+#     print(count)
+#     # print(p)
+# else:
+#     print('NO')
+
+# # EXERCISE 50
+#
+# # принимаем последовательность из 10 чисел
+# sequence = []
+# for i in range(3):
+#     sequence.append(int(input()))
+#
+# # инициализируем переменные для суммы и максимального отрицательного числа
+# sum_neg = 0
+# max_neg = -1
+#
+# # проходим по последовательности и ищем отрицательные числа
+# for num in sequence:
+#     if num < 0:
+#         sum_neg += num
+#         if num > max_neg:
+#             max_neg = num
 
 
-if count > 0:
-    print(count)
-    # print(p)
-else:
-    print('NO')
+# # выводим результаты
+# if sum_neg == 0:
+#     print("NO")
+# else:
+#     print( sum_neg)
+#     print( max_neg)
 
 
+# # EXERCISE 51
+#
+# s = 0
+# for i in range(1, 8):
+#     n = int(input())
+#     if n % 2 == 0:
+#         s += n
+# print(s)
+
+# # EXERCISE 52
+#
+# n =input()
+# # convert input to a list of num
+# all_num = [int(x)for x  in str(n)]
+# # print(all_num)
+# # max_digit = []
+# num_devide_three = []
+# for num in all_num:
+#     if num % 3 == 0:
+#         num_devide_three.append(num)
+# if num_devide_three == []:
+#     print('NO')
+# else:
+#     print(max(num_devide_three))
+
+#
+# # EXERCISE 53
+# n = int(input())
+# while n > 9:
+#     n //= 10
+# print(n)
+
+
+# # EXERCISE 54
+# n = int(input())
+# product = 1
+#
+# while n > 0:
+#     digit = n % 10
+#     product = product * digit
+#     n //= 10
+# print(product)
+#
+# # EXERCISE 55
+# for i in range(1, 4):
+#     for j in range(3, 6):
+#         print(i, j)
+
+# # EXERCISE 56
+# for i in range(1, 4):
+#     for j in range(3, 5):
+#         print(i + j, end='')
+
+# # EXERCISE 57
+#
+# counter = 0
+# for i in range(99, 102):
+#     temp = i
+#     while temp > 0:
+#         counter += 1
+#         temp //= 10
+# print(counter)
+
+# # EXERCISE 58
+# n = int(input())
+# # print n range2 times
+# for i in range(n):
+#     for j in range(3):
+#         print(n, end=' ')
+#     print()
+
+# # EXERCISE 59
+#
+# n = int(input())
+# # print n range2 times
+# for i in range(n):
+#     for j in range(5):
+#         print(i + 1, end=' ')
+#     print()
+
+# # EXERCISE 60
+#
+# n = int(input())
+# number_digit = 1
+# # print n range2 times
+# for i in range(n):
+#     number_digit = 1
+#
+#     for j in range(9):
+#         print(f'{i + 1} + {number_digit} = {number_digit+(i+1)}')
+#         number_digit += 1
+#
+#     print()
+
+# # EXERCISE 61
+# n = int(input())
+# for i in range(0 ,n ):
+#         i+= 1
+#     for j in range(1, n +1 ):
+#         print('*', end='')
+#
+#     print()
