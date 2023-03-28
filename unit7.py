@@ -682,10 +682,137 @@ import math
 #     print()
 
 # # EXERCISE 61
+# #  Если текущий номер строки меньше или равен половине
+# #  высоты треугольника (то есть меньше или равен (n + 1) // 2),
+# #  выводится i звездочек. В противном случае выводится (n - i + 1)
+# #  звездочек, то есть количество звездочек на каждой строке убывает.
 # n = int(input())
-# for i in range(0 ,n ):
-#         i+= 1
-#     for j in range(1, n +1 ):
+# for i in range(1, n + 1):
+#     if i <= (n + 1) // 2:
+#         print("*" * i)
+#     else:
+#         print("*" * (n - i + 1))
+#
+# # EXERCISE 62
+#
+# for i in range(8):
+#     for j in range(i + 1):
 #         print('*', end='')
+#     print()
+
+# # EXERCISE 62
+# n = int(input())
+# m = 0
+#
+# for i in range(n):
+#     m += 1
+#     for j in range(i + 1):
+#         print(m, end='')
 #
 #     print()
+
+# # EXERCISE 63
+# # Решите уравнение в натуральных числах
+#
+# # 28n+30k+31m=365.
+# n = 365//28
+# k = 365//30
+# m = 365//31
+# print(n)
+# print(k)
+# print(m)
+# total = 0
+# for n in range(1, 13):
+#     for k in range(1, 12):
+#         for m in range(1, 11):
+#                    if 28 * n + 30 * k + 31 * m == 365:
+#                         total += 1
+#                         print('n =', n, 'k =', k, 'm =', m)
+#                         print('Общее количество натуральных решений =', total)
+
+# # EXERCISE 64
+# # 10n+5k+0.5m=100
+# n = 100//10
+# k = 100//5
+# m = 100//0.5
+# print(n)
+# print(k)
+# print(m)
+# total = 0
+# for n in range(1, 100):
+#     for k in range(1, 100):
+#         for m in range(1, 100):
+#                    if  10*n + 5*k + 0.5 * m == 100  and n + k + m == 100:
+#                         total += 1
+#                         print('n =', n, 'k =', k, 'm =', m)
+#                         print('Общее количество натуральных решений =', total)
+
+# # EXERCISE 65
+# for a in range(1, 151):
+#     for b in range(a, 151):
+#         for c in range(b, 151):
+#             for d in range(c, 151):
+#                 for e in range(d, 151):
+#                     if a**5 + b**5 + c**5 + d**5 == e**5:
+#                         print(a, b, c, d, e)
+
+# # EXERCISE 63
+#
+# n = int(input())
+# m = 1
+#
+# for i in range(n):
+#
+#     for j in range(i + 1):
+#         print(m, end=' ')
+#         m += 1
+#
+#     print()
+#
+# # EXERCISE 64
+#
+# n = int(input())
+# # m = 1
+# for i in range(1, n + 1):
+#     for j in range(1,i+1):
+#         print(j , end='')
+#         # m +=1
+#         for j in range(i - 1, 0, -1):
+#             print(j, end='')
+#             # m -=1
+#
+#
+#         print()
+
+# # EXERCISE 65
+#
+# n = int(input())
+# for i in range(1, n + 1):
+#     for j in range(1, i + 1):
+#         print(j, end='')
+#     for j in range(i - 1, 0, -1):
+#         print(j, end='')
+#     print()
+
+# EXERCISE 66
+
+a = int(input())
+b = int(input())
+# максимальная сумма делителей
+summ_count = 0
+# максимальному значению у которого
+# сумма делителей будет наибольшей
+max_x = 0
+
+for x in range(a, b +1):
+    # обнуление счетчика делителей
+    count = 0
+    for i in range (1, b +1):
+        if x % i == 0:
+            count +=i
+            if count >= summ_count:
+                summ_count = count
+                max_x = x
+print(max_x, summ_count)
+
+
