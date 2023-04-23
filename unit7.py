@@ -793,27 +793,198 @@ import math
 #     for j in range(i - 1, 0, -1):
 #         print(j, end='')
 #     print()
+#
+# # EXERCISE 66
+#
+# a = int(input())
+# b = int(input())
+# # максимальная сумма делителей
+# summ_count = 0
+# # максимальному значению у которого
+# # сумма делителей будет наибольшей
+# max_x = 0
+#
+#
+# for x in range(a, b +1):
+#     # обнуление счетчика делителей
+#     count = 0
+#     for i in range (1, b +1):
+#         if x % i == 0:
+#             count +=i
+#             if count >= summ_count:
+#                 summ_count = count
+#                 max_x = x
+# print(max_x, summ_count)
 
-# EXERCISE 66
+# # EXERCISE 67
+# n = int(input())
+# plus = '+'
+# # первый цикл выводит кол-во строк
+# for i in range(1, n + 1):
+#     print(i,end='')
+#     #  что выводит в каждой строке
+#     for j in range(1, n +1):
+#             if i % j == 0:
+#                 print('+', end ='')
+#     print()
+#
+# EXERCISE 68
 
-a = int(input())
-b = int(input())
-# максимальная сумма делителей
-summ_count = 0
-# максимальному значению у которого
-# сумма делителей будет наибольшей
-max_x = 0
+# n = int(input())
+# lis_n = []
+# new_n = 0
+#
+# while n  > 9:
+#     lis_n.append(n % 10)
+#     n = n // 10
+# # print(lis_n)
+#     for i in lis_n:
+#         n += i
+#     lis_n = []
+# print(n)
+#
+# # while new_n  > 0:
+# #     lis_n.append(new_n % 10)
+# #     new_n = new_n // 10
+# # # print(lis_n)
+# # for i in lis_n:
+# #     new_n += i
+# # print(new_n)
+
+#
+# from math import *
+# n = int(input())
+# summ = 0
+# mult = 1
+#
+# for x in range(1, n+1 ):
+#     summ += factorial(x)
+# print(summ)
+
+# # EXERCISE 69
+# a = int(input())
+# b = int(input())
+#
+# for x in range (a, b +1 ):
+#     count = 0
+#     for i in range (1, x + 1):
+#         if x % i == 0:
+#             count += 1
+#     if count == 2:
+#        print(x)
+
+# Определение суммы вводимого числа
+
+# number = int(input())
+# sum = 0
+#
+# while number > 0:
+#     # остаток от деления на 10
+#     digit = number % 10
+#     # прибавляем к тотал последнюю цифру
+#     sum += digit
+#     # оставляем только те цифры, которые деляться на 10
+#     number //= 10
+#
+# print("Сумма цифр числа:", sum)
 
 
-for x in range(a, b +1):
-    # обнуление счетчика делителей
-    count = 0
-    for i in range (1, b +1):
-        if x % i == 0:
-            count +=i
-            if count >= summ_count:
-                summ_count = count
-                max_x = x
-print(max_x, summ_count)
+# # EXERCISE 70
+# n = int(input())
+#
+# s = 0
+# while n > 0:
+#     if n % 2 == 0:
+#         digit = n % 10
+#         s += digit
+#     n //= 10
+# print(s)
+
+#
+# # EXERCISE 71
+# n = 8
+# count = 0
+# maximum = -10**6 -1
+# for i in range(1, n + 1):
+#     x = int(input())
+#     if x % 4 == 0:
+#         count += 1
+#         if x > maximum:
+#             maximum = x
+# if count > 0:
+#     print(count)
+#     print(maximum)
+# else:
+#     print('NO')
+
+# # EXERCISE 72
+#
+# n = 4
+# count = 0
+# maximum = -10**8
+# for i in range(1, n + 1):
+#     x = int(input())
+#     if x % 2 != 0:
+#         count += 1
+#         if x > maximum:
+#             maximum = x
+#
+# if count > 0:
+#     print(count)
+#     print(maximum)
+# else:
+#     print('NO')
+
+# # EXERCISE 73
+#
+# n = int(input())
+# for i in range(1, n+1):
+#     if i == 1 or i == n:
+#         print('*' * 19)
+#     else:
+#         print('*' + ' ' * 17 + '*')
+
+#
+# # EXERCISE 74
+#
+# n = int(input())
+# n_list = []
+# while n > 0:
+#     digit = n % 10
+#     n_list.append(digit)
+#     n = n //10
+# # print(n_list)
+# print(n_list[-3])
 
 
+# EXERCISE 75
+
+n = int(input())
+count3 = 0
+countLast = 0
+countChet = 0
+sumBig5 = 0
+multyBig7 = 1
+count05 = 0
+last = n % 10
+while n > 0:
+    x = n % 10
+    if x == 3:
+        count3 += 1
+    if x == last:
+        countLast += 1
+    if x % 2 == 0:
+        countChet += 1
+    if x > 5:
+        sumBig5 += x
+    if x > 7:
+        multyBig7 *= x
+    if x == 0 or x == 5:
+        count05 += 1
+    n //= 10
+print(count3)
+print(countLast)
+print(countChet)
+print(sumBig5)
+print(multyBig7)
+print(count05)
