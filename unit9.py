@@ -303,36 +303,121 @@
 # s = input()
 # print(s.count(" ") + 1)
 
+#
+# # EXERCISE
+# #
+# # На вход программе подается строка
+# # генетического кода, состоящая из букв А (аденин)
+# # , Г (гуанин), Ц (цитозин), Т (тимин).
+# # Напишите программу, которая подсчитывает
+# # сколько аденина, гуанина, цитозина и тимина
+# # входит в данную строку генетического кода.
+#
+# s = input().lower()
+#
+# a = 0
+# g = 0
+# z = 0
+# t = 0
+#
+#
+# for i in s:
+#     if i == 'а':
+#         a +=1
+#     if i == 'г':
+#         g += 1
+#     if i == 'ц':
+#         z += 1
+#     if i == 'т':
+#         t += 1
+#
+#
+# print(f'Аденин: {a}')
+# print(f'Гуанин: {g}')
+# print(f'Цитозин:  {z}')
+# print(f'Тимин: {t}')
+
+# # EXERCISE
+#
+# number_s = int(input())
+# count_eleven = 0
+# final_count = 0
+#
+# for i in range (0, number_s ):
+#     s = input()
+#     count_eleven = s.count('11')
+#     if count_eleven > 2:
+#         final_count +=1
+# print(final_count)
+
+# # EXERCISE
+#
+# s = input()
+# count = 0
+# for i in range(0,10):
+#     count += s.count(str(i))
+# print(count)
+#
+# # EXERCISE
+#
+# s = input()
+# if s.endswith('.com') or s.endswith('.ru'):
+#     print('YES')
+# else:
+#     print('NO')
+#
+# # EXERCISE
+
+# s = input()
+# a = 0
+# b = 0
+#
+# for i in s:
+#     if s.count(i) >= a:
+#         a = s.count(i)
+#         b = i
+# print(b)
+
+
+# # EXERCISE
+#
+# s = input()
+# indexes = [i for i, c in enumerate(s) if c == 'f']
+# if  s.count('f') == 0:
+#     print('NO')
+# elif s.count('f') == 1:
+#     print(indexes[0])
+# else:
+#     print(f'{indexes[0]} {indexes[-1]}')
+
+# # EXERCISE
+#
+# s= input()
+# min = s.find('h')
+# max = s.rfind('h')
+# output = s[: min ] + s[max +1 :]
+# print(output)
 
 # EXERCISE
-#
-# На вход программе подается строка
-# генетического кода, состоящая из букв А (аденин)
-# , Г (гуанин), Ц (цитозин), Т (тимин).
-# Напишите программу, которая подсчитывает
-# сколько аденина, гуанина, цитозина и тимина
-# входит в данную строку генетического кода.
 
-s = input().lower()
+s = 'aabbAA111ccDDaa'
+print(s.isalnum())
+print(s.isalpha())
+print(s.isdigit())
 
-a = 0
-g = 0
-z = 0
-t = 0
+s = 'aabb!@#$11cc'
+print(s.islower())
 
 
-for i in s:
-    if i == 'а':
-        a +=1
-    if i == 'г':
-        g += 1
-    if i == 'ц':
-        z += 1
-    if i == 'т':
-        t += 1
+s = 'AAb!@#$11CC'
+print(s.isupper())
+
+s = '    abbc    '
+print(s.isspace())
 
 
-print(f'Аденин: {a}')
-print(f'Гуанин: {g}')
-print(f'Цитозин:  {z}')
-print(f'Тимин: {t}')
+s = 'In {0}, someone paid {1} {2} for two pizzas.'
+
+print(s.format(2010,'10k','Bitcoin' ))
+
+
