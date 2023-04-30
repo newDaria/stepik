@@ -398,26 +398,92 @@
 # output = s[: min ] + s[max +1 :]
 # print(output)
 
+# # EXERCISE
+#
+# s = 'aabbAA111ccDDaa'
+# print(s.isalnum())
+# print(s.isalpha())
+# print(s.isdigit())
+#
+# s = 'aabb!@#$11cc'
+# print(s.islower())
+#
+#
+# s = 'AAb!@#$11CC'
+# print(s.isupper())
+#
+# s = '    abbc    '
+# print(s.isspace())
+#
+#
+# s = 'In {0}, someone paid {1} {2} for two pizzas.'
+#
+# print(s.format(2010,'10k','Bitcoin' ))
+
+
+# print(ord('foo'))
+
+# # EXERCISE
+#
+# a = int(input())
+# b = int(input())
+#
+# for i in range(a,b +1 ):
+#     print(chr(i), end= ' ')
+
+#
+# # EXERCISE
+#
+# s = input()
+# for i in range(len(s)):
+#     print(ord(s[i]), end= ' ')
+
+
+# name = 'джо'
+# print(name.lower())
+# print(name.upper())
+# print(name)
+#
+# s = 'Python rocks!'
+# print(s[1:6])
+#
+# s = '    Python rocks!     '
+# print(s.strip())
+# print(s.upper())
+# print(s.replace('o', '@' ))
+
+# s = input()
+#
+# for i in range(len(s)):
+#     if i % 3 != 0:
+#         print(s[i], end='')
+
+# # EXERCISE
+#
+# s = input()
+# print(s.replace('1', 'one'))
+#
+#
+# # EXERCISE
+# s = input()
+# print(s.replace('@',''))
+
+#
+# # EXERCISE
+# s = input()
+# indexes = [i for i, c in enumerate(s) if c == 'f']
+# if  s.count('f') == 0:
+#     print(-2)
+# elif s.count('f') == 1:
+#     print(-1)
+# else:
+#     print(f'{indexes[1]}')
+
 # EXERCISE
 
-s = 'aabbAA111ccDDaa'
-print(s.isalnum())
-print(s.isalpha())
-print(s.isdigit())
-
-s = 'aabb!@#$11cc'
-print(s.islower())
-
-
-s = 'AAb!@#$11CC'
-print(s.isupper())
-
-s = '    abbc    '
-print(s.isspace())
-
-
-s = 'In {0}, someone paid {1} {2} for two pizzas.'
-
-print(s.format(2010,'10k','Bitcoin' ))
+s = input()
+indexes = [i for i, c in enumerate(s) if c == 'h']
+rev = s[indexes[0] +1 :indexes[-1]]
+print(f'{s[0:indexes[0]+1]}{rev[:: -1]}{s[indexes[-1]:]}')
 
 
